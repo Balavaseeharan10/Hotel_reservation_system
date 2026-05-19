@@ -146,3 +146,7 @@ public class NRIResident {
  }
  
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> branch 'main' of https://github.com/Balavaseeharan10/Hotel_reservation_system.git

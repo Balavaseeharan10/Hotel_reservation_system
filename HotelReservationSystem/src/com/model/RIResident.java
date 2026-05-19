@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 package com.model;
 
 public class RIResident {
 
 }
+=======
+>>>>>>> branch 'main' of https://github.com/Balavaseeharan10/Hotel_reservation_system.git
 package com.model;
 
 public class RIResident {

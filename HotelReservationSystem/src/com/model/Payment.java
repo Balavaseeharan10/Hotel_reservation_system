@@ -1,9 +1,17 @@
+<<<<<<< HEAD
+package com.model;
+
+public class Payment {
+
+}
+=======
 package com.model;
 
 import java.util.Date;
 
 public class Payment {
 
+<<<<<<< HEAD
 	    private String paymentId;
 	    private String bookingId;
 	    private String residentName;
@@ -107,3 +115,7 @@ public class Payment {
 	
 
 
+=======
+}
+>>>>>>> branch 'main' of https://github.com/Balavaseeharan10/Hotel_reservation_system.git
+>>>>>>> branch 'main' of https://github.com/Balavaseeharan10/Hotel_reservation_system.git

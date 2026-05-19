@@ -1,8 +1,8 @@
-<<<<<<< HEAD
+
 package com.model;
 
 public class Room {
-	 private String roomNumber;
+      private String roomNumber;
 	  private String floorNumber;
 	  private String isOccupied;
 	  private int maxOccupancy;
@@ -66,10 +66,7 @@ public class Room {
 }
 =======
 package com.model;
->>>>>>> branch 'main' of https://github.com/Balavaseeharan10/Hotel_reservation_system.git
 
-<<<<<<< HEAD
-=======
 public class Room {
  private String roomNumber;
  private String floorNumber;
@@ -138,4 +135,4 @@ public class Room {
 			+ ", hasGymAccess=" + hasGymAccess + "]";
  }
 }
->>>>>>> branch 'main' of https://github.com/Balavaseeharan10/Hotel_reservation_system.git
+

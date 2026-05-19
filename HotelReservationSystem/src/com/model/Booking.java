@@ -5,9 +5,7 @@ import java.time.LocalDate;
 
 public class Booking {
 	
-<<<<<<< HEAD
-<<<<<<< HEAD
-	private String bookingId;
+	   private String bookingId;
 	   private String residentId;
 	   private String residentName;
 	   private int durationOfStay;
@@ -134,16 +132,4 @@ public class Booking {
 		this.gymAccess = gymAccess;
 	   }
 
-=======
-public static void main(String[] args) {
-	System.out.println("hi hello");
-=======
->>>>>>> branch 'main' of https://github.com/Balavaseeharan10/Hotel_reservation_system.git
 }
-<<<<<<< HEAD
->>>>>>> branch 'main' of https://github.com/Balavaseeharan10/Hotel_reservation_system.git
-}
->>>>>>> branch 'main' of https://github.com/Balavaseeharan10/Hotel_reservation_system.git
-=======
-
->>>>>>> branch 'main' of https://github.com/Balavaseeharan10/Hotel_reservation_system.git

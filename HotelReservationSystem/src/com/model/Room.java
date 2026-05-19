@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> branch 'main' of https://github.com/Balavaseeharan10/Hotel_reservation_system.git
 package com.model;
+<<<<<<< HEAD
 
 public class Room {
       private String roomNumber;
@@ -66,6 +70,8 @@ public class Room {
 }
 =======
 package com.model;
+=======
+>>>>>>> branch 'main' of https://github.com/Balavaseeharan10/Hotel_reservation_system.git
 
 public class Room {
  private String roomNumber;
@@ -135,4 +141,7 @@ public class Room {
 			+ ", hasGymAccess=" + hasGymAccess + "]";
  }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> branch 'main' of https://github.com/Balavaseeharan10/Hotel_reservation_system.git

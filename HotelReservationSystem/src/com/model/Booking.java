@@ -1,12 +1,9 @@
 package com.model;
 
-
 import java.time.LocalDate;
 
 public class Booking {
-	
-
-	private String bookingId;
+       private String bookingId;
 	   private String residentId;
 	   private String residentName;
 	   private int durationOfStay;
@@ -132,6 +129,5 @@ public class Booking {
 		this.poolAccess = poolAccess;
 		this.gymAccess = gymAccess;
 	   }
-
 
 }

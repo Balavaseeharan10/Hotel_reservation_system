@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-package com.model;
-
-public class Room {
-
-}
-=======
 package com.model;
 
 public class Room {
@@ -75,4 +68,3 @@ public class Room {
 			+ ", hasGymAccess=" + hasGymAccess + "]";
  }
 }
->>>>>>> branch 'main' of https://github.com/Balavaseeharan10/Hotel_reservation_system.git

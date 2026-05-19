@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-package com.model;
 
-public class NRIResident {
-
-}
-=======
 package com.model;
 
 public class NRIResident {
@@ -152,4 +146,3 @@ public class NRIResident {
  }
  
 }
->>>>>>> branch 'main' of https://github.com/Balavaseeharan10/Hotel_reservation_system.git

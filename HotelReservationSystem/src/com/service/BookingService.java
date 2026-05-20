@@ -8,7 +8,6 @@ package com.service;
 	import com.model.Booking;
 	import com.util.ApplicationUtil;
 	
-	
 
 	public class BookingService {
 
@@ -23,9 +22,9 @@ package com.service;
 
 	            for (String data : bookingRecords) {
 
-	                List<String> values =ApplicationUtil.extractDetails(data);
+	                List<String> values =ApplicationUtil.extractDetail(data);
 
-	                Booking booking = new Booking();
+	                Booking booking = new Booking(data, data, data, 0, 0, 0, 0, null, null, data, data, data, data, data, data);
 
 	                booking.setBookingId(generateId());
 

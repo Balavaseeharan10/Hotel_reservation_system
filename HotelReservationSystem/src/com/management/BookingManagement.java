@@ -11,6 +11,7 @@ package com.management;
 	public class BookingManagement {
 
 	    // INSERT BOOKING LIST
+		
 	    public boolean insertBookingList(List<Booking> bookingList) {
 
 	        boolean result = false;
@@ -246,41 +247,39 @@ package com.management;
 
 	            ResultSet rs = ps.executeQuery();
 
-	            if (rs.next()) {
+	            if (rs.next())
+	            {
+	            	Booking booking1=new Booking(query, query, query, 0, 0, 0, 0, null, null, query, query, query, query, query, query);
 
-	                Booking booking = new Booking();
+	                booking1.setBookingId(rs.getString(1));
 
-	                booking.setBookingId(rs.getString(1));
+	                booking1.setResidentId(rs.getString(2));
 
-	                booking.setResidentId(rs.getString(2));
+	                booking1.setResidentName(rs.getString(3));
 
-	                booking.setResidentName(rs.getString(3));
+	                booking1.setDurationOfStay(rs.getInt(4));
 
-	                booking.setDurationOfStay(rs.getInt(4));
+	                booking1.setNumberOfAdults(rs.getInt(5));
 
-	                booking.setNumberOfAdults(rs.getInt(5));
+	                booking1.setNumberOfChildrenAbove12(rs.getInt(6));
 
-	                booking.setNumberOfChildrenAbove12(rs.getInt(6));
+	                booking1.setNumberOfChildrenAbove5(rs.getInt(7));
 
-	                booking.setNumberOfChildrenAbove5(rs.getInt(7));
+	                booking1.setCheckInDate(rs.getDate(8).toLocalDate());
 
-	                booking.setCheckInDate(
-	                        rs.getDate(8).toLocalDate());
+	                booking1.setCheckOutDate(rs.getDate(9).toLocalDate());
+	                
+	                booking1.setFloorNumber(rs.getString(10));
 
-	                booking.setCheckOutDate(
-	                        rs.getDate(9).toLocalDate());
+	                booking1.setRoomNumber(rs.getString(11));
 
-	                booking.setFloorNumber(rs.getString(10));
+	                booking1.setPreferredPackage(rs.getString(12));
 
-	                booking.setRoomNumber(rs.getString(11));
+	                booking1.setAcAccess(rs.getString(13));
 
-	                booking.setPreferredPackage(rs.getString(12));
+	                booking1.setPoolAccess(rs.getString(14));
 
-	                booking.setAcAccess(rs.getString(13));
-
-	                booking.setPoolAccess(rs.getString(14));
-
-	                booking.setGymAccess(rs.getString(15));
+	                booking1.setGymAccess(rs.getString(15));
 	            }
 
 	        } catch (Exception e) {

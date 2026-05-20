@@ -132,3 +132,5 @@ public class Booking {
 		this.gymAccess = gymAccess;
 	   }
 }
+	   
+	

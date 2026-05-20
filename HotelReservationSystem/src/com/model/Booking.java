@@ -12,7 +12,7 @@ public class Booking {
 	   private int numberOfChildrenAbove5;
 	   private LocalDate checkInDate;
 	   private LocalDate checkOutDate;
-	   private String floornumber;
+	   private String floorNumber;
 	   private String roomNumber;
 	   private String preferredPackage;
 	   private String acAccess;
@@ -72,11 +72,11 @@ public class Booking {
 	   public void setCheckOutDate(LocalDate checkOutDate) {
 		this.checkOutDate = checkOutDate;
 	   }
-	   public String getFloornumber() {
-		return floornumber;
+	   public String getFloorNumber() {
+		return floorNumber;
 	   }
-	   public void setFloornumber(String floornumber) {
-		this.floornumber = floornumber;
+	   public void setFloorNumber(String floorNumber) {
+		this.floorNumber = floorNumber;
 	   }
 	   public String getRoomNumber() {
 		return roomNumber;
@@ -110,7 +110,7 @@ public class Booking {
 	   }
 	   public Booking(String bookingId, String residentId, String residentName, int durationOfStay, int numberOfAdults,
 			int numberOfChildrenAbove12, int numberOfChildrenAbove5, LocalDate checkInDate, LocalDate checkOutDate,
-			String floornumber, String roomNumber, String preferredPackage, String acAccess, String poolAccess,
+			String floorNumber, String roomNumber, String preferredPackage, String acAccess, String poolAccess,
 			String gymAccess) {
 		super();
 		this.bookingId = bookingId;
@@ -122,7 +122,7 @@ public class Booking {
 		this.numberOfChildrenAbove5 = numberOfChildrenAbove5;
 		this.checkInDate = checkInDate;
 		this.checkOutDate = checkOutDate;
-		this.floornumber = floornumber;
+		this.floorNumber = floorNumber;
 		this.roomNumber = roomNumber;
 		this.preferredPackage = preferredPackage;
 		this.acAccess = acAccess;

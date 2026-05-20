@@ -163,7 +163,8 @@ package com.service;
 
 	        try {
 
-	            booking =management.viewBookingDetails(bookingId);
+	            booking = management.viewBookingDetails(bookingId);
+	            
 
 	        } catch (Exception e) {
 	            e.printStackTrace();

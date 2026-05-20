@@ -1,11 +1,10 @@
 package com.model;
 
-import java.sql.Date;
 import java.time.LocalDate;
 
 public class Booking {
 	
-	private String bookingId;
+	   private String bookingId;
 	   private String residentId;
 	   private String residentName;
 	   private int durationOfStay;
@@ -20,7 +19,8 @@ public class Booking {
 	   private String acAccess;
 	   private String poolAccess;
 	   private String gymAccess;
-	   public String getBookingId() {
+	   
+	   public  String getBookingId() {
 		return bookingId;
 	   }
 	   public void setBookingId(String bookingId) {

@@ -1,3 +1,4 @@
+
 package com.model;
 
 public class Room {
@@ -68,3 +69,4 @@ public class Room {
 			+ ", hasGymAccess=" + hasGymAccess + "]";
  }
 }
+

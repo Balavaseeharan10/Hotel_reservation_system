@@ -2,6 +2,7 @@ package com.service;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import com.dao.RoomDAO;
 import com.model.Room;
 import com.util.ApplicationUtil;
@@ -33,7 +34,7 @@ public class RoomService {
 	   return dao.updateOccupiedStatusUsingRoomNumber(roomNumber,status);
    }
    
-   public boolean deleteRoomDetailsFromDBUsingFloorNumber(String roomNumber)
+   public boolean deleteRoomDetailsFromDBUsingFloorNumber(String floorNumber)
    {
 	   return dao.deleteRoomDetailsFromDBUsingFloorNumber(floorNumber);
    }

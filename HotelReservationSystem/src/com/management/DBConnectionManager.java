@@ -8,11 +8,8 @@ public class DBConnectionManager {
 		Connection con=null;
 		
 		try {
-			Class.forName("com.mysql.cj.jdb"
-					+ "c.Driver");
-			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/hoteldb",
-                    "root",
-                    "Bala10");
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/hoteldb","root","vasee10");
 		}
 		catch(Exception e) {
 			e.printStackTrace();

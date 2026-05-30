@@ -15,6 +15,7 @@ public class RIResident {
     private int durationOfStay;
     private String residentType;
     private long idproofAadharno;
+    
 	public String getResidentId() {
 		return residentId;
 	}
@@ -111,13 +112,6 @@ public class RIResident {
 		this.residentType = residentType;
 		this.idproofAadharno = idproofAadharno;
 	}
-	@Override
-	public String toString() {
-		return "RIResident [residentId=" + residentId + ", residentName=" + residentName + ", age=" + age + ", gender="
-				+ gender + ", contactNumber=" + contactNumber + ", email=" + email + ", address=" + address
-				+ ", numberOfAdults=" + numberOfAdults + ", numberOfChildrenAbove12=" + numberOfChildrenAbove12
-				+ ", numberOfChildrenAbove5=" + numberOfChildrenAbove5 + ", durationOfStay=" + durationOfStay
-				+ ", residentType=" + residentType + ", idproofAadharno=" + idproofAadharno + "]";
-	}
+	
     
 }

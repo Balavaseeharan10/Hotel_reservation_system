@@ -62,11 +62,5 @@ public class Room {
 	this.hasSwimmingPoolAccess = hasSwimmingPoolAccess;
 	this.hasGymAccess = hasGymAccess;
  }
- @Override
- public String toString() {
-	return "Room [roomNumber=" + roomNumber + ", floorNumber=" + floorNumber + ", isOccupied=" + isOccupied
-			+ ", maxOccupancy=" + maxOccupancy + ", hasAc=" + hasAc + ", hasSwimmingPoolAccess=" + hasSwimmingPoolAccess
-			+ ", hasGymAccess=" + hasGymAccess + "]";
- }
 }
 

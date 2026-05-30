@@ -3,6 +3,7 @@ package com.management;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
 import java.util.List;
 
 import com.model.RIResident;
@@ -16,8 +17,11 @@ public class RIResidentManagement {
         try {
             Connection con = DBConnectionManager.getConnection();
 
-            String query = "INSERT INTO riresident VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)";
-
+            String query =
+            		"INSERT INTO riresident " +
+            		"(RESIDENT_ID, RESIDENT_NAME, AGE, GENDER, CONTACT_NUMBER, EMAIL, ADDRESS, NUMBER_OF_ADULTS, NUMBER_OF_CHILDREN_ABOVE12, NUMBER_OF_CHILDREN_ABOVE5, DURATION_OF_STAY, RESIDENT_TYPE, IDPROOF_AADHARNO) " +
+            		"VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)";
+            
             PreparedStatement ps = con.prepareStatement(query);
 
             for (RIResident resident : residentList) {
@@ -41,7 +45,8 @@ public class RIResidentManagement {
 
             result = true;
 
-        } catch (Exception e) {
+        } 
+        catch (Exception e) {
             e.printStackTrace();
         }
 
@@ -69,7 +74,8 @@ public class RIResidentManagement {
                 result = true;
             }
 
-        } catch (Exception e) {
+        }
+        catch (Exception e) {
             e.printStackTrace();
         }
 
@@ -102,7 +108,8 @@ public class RIResidentManagement {
                 result = true;
             }
 
-        } catch (Exception e) {
+        } 
+        catch (Exception e) {
             e.printStackTrace();
         }
 
@@ -156,7 +163,8 @@ public class RIResidentManagement {
                 resident.setIdproofAadharno(rs.getLong("IDPROOF_AADHARNO"));
             }
 
-        } catch (Exception e) {
+        } 
+        catch (Exception e) {
             e.printStackTrace();
         }
 
@@ -183,10 +191,46 @@ public class RIResidentManagement {
                 result = true;
             }
 
-        } catch (Exception e) {
+        } 
+        catch (Exception e) {
             e.printStackTrace();
         }
 
         return result;
+    }
+    
+    public List<RIResident> viewAllRIResidents() {
+
+        List<RIResident> residentList =new ArrayList<RIResident>();
+
+        try {
+
+            Connection con =DBConnectionManager.getConnection();
+
+            String query ="SELECT * FROM RIRESIDENT";
+
+            PreparedStatement ps = con.prepareStatement(query);
+
+            ResultSet rs = ps.executeQuery();
+
+            while(rs.next()) {
+
+                RIResident resident =new RIResident(query, query, 0, query, 0, query, query, 0, 0, 0, 0, query, 0);
+
+                resident.setResidentId( rs.getString("RESIDENT_ID"));
+
+                resident.setResidentName(rs.getString("RESIDENT_NAME"));
+
+                resident.setContactNumber(rs.getLong("CONTACT_NUMBER"));
+
+                residentList.add(resident);
+            }
+
+        } catch(Exception e) {
+
+            e.printStackTrace();
+        }
+
+        return residentList;
     }
 }
